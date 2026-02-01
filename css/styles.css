@@ -329,6 +329,9 @@ address{
     margin-right: 16px;
     padding-top: 0;
 }   
+.social-link-icons-team:hover{
+    background-color: #404BBF;
+}
 /* #endregion benefits */
 /* #region portfolio */
 
