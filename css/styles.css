@@ -106,6 +106,7 @@ p {
 }
 header{
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 .navigation{
     display: flex;
@@ -171,10 +172,12 @@ address{
     background-color: #2E2F42;
     padding-bottom: 188px;
     padding-top: 188px;
+    max-width: 1440px;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(./../images/background-image/people-office.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%
+    background-position: 50% 50%;
+    margin: 0 auto;
 }
 
 .order-service h1 {
@@ -300,10 +303,32 @@ address{
     background-image: linear-gradient(to top, rgba(244, 244, 253, 1), rgba(244, 244, 253, 1));
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    height: 112px;
+    width: 264px;
 }
 .benefits-icon{
-    margin: 24px 100px;
+    margin: auto auto;
+    
 }
+.social-link-icons-team{
+    display: flex;
+    background-color: #4D5AE5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    fill: #F4F4FD;
+
+}
+.social-link-team{
+    display: flex;
+    gap: 24px !important;
+    padding-bottom: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 0;
+}   
 /* #endregion benefits */
 /* #region portfolio */
 
@@ -403,6 +428,20 @@ footer{
     padding-left: 17px;
     left: 47%;
     transform: translate(-50%, -120%);
+}
+.social-link-icons{
+    display: flex;
+    background-color: #4D5AE5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    fill: #F4F4FD;
+
+}
+.social-link-icons:hover{
+    background-color: #31d0aa;
 }
 
 /* #endregion footer */
