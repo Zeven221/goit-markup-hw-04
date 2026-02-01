@@ -273,6 +273,12 @@ address{
     letter-spacing: 0.02em;
     padding-bottom: 72px;
 }
+.team ul li:hover{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team ul:focus{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
 /* #endregion team */
 /* #region benefits */
 .benefits h3 {
@@ -332,6 +338,7 @@ address{
 .social-link-icons-team:hover{
     background-color: #404BBF;
 }
+
 /* #endregion benefits */
 /* #region portfolio */
 
