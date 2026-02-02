@@ -260,10 +260,11 @@ address{
     
 }
 .team ul li img {
-    max-width: 100%;
+    width: 100%;
     display: block;
     object-fit: cover;
     height: auto;
+
 
 }
 .info-about-team {
@@ -439,7 +440,7 @@ address{
 .portfolio-items-cash{
     position: relative;
 }
-.portfolio-items-cash:hover{
+.cashless_payment:hover{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .portfolio-items-cash:hover .overlay-portfolio {
