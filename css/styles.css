@@ -121,8 +121,10 @@ header{
     display: flex;
     align-items: center;
     gap: 76px;
-    position: relative;
 
+}
+.active-link{
+    position: relative;
 }
 .active-link::after {
     content: "";
@@ -131,8 +133,8 @@ header{
     width: 100%;
     background-color: #404BBF;
     border-radius: 2px;
-    position: relative;
-    top: 20px;
+    position: absolute;
+    bottom: -3px;
 
 }
 .email, .phone{
@@ -166,7 +168,8 @@ address{
     border-radius: 4px;
     text-align: center;
     margin: 0 auto;
-    padding: 16px 32px
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 
@@ -195,7 +198,7 @@ address{
 
 }
 .order-button{
-    transition: 200ms ease-in-out;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .order-button:hover
 {
@@ -211,11 +214,12 @@ address{
 /* #region link */
 .contacts-link, .portfolio-link, .studio-link, .email, .phone {
     line-height: 1.5;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .contacts-link:hover,.portfolio-link:hover,.studio-link:hover,.email:hover, .phone:hover {
     color: #404BBF;
-    transition: 200ms ease-in-out;
+
 }
 .contacts-link:focus,.portfolio-link:focus,.studio-link:focus,.email:focus, .phone:focus {
     color: #404BBF;
@@ -237,6 +241,9 @@ address{
     
 
     
+}
+.info-about-team{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team li{
     border-radius: 0 0 4px 4px;
@@ -294,7 +301,7 @@ address{
 }
 .social-link-icons-team{
     margin-top: 8px;
-    transition: 200ms ease-in-out;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }  
 .social-link-icons-team:hover{
     background-color: #404BBF;
@@ -344,11 +351,12 @@ address{
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    fill: #F4F4FD;
 
 }
 
-
+.social-link-icons-team svg{
+        fill: #F4F4FD;
+}
 /* #endregion benefits */
 /* #region portfolio */
 
@@ -422,22 +430,29 @@ address{
     width: 100%;
     height: 72%;
     transform: translateY(100%);
-    transition: 200ms ease-in-out;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
-.overlay-portfolio:hover {
-    transform: translateY(0%);
 
-}
 .overlay-portfolio p{
     color: #F4F4FD;
 }
 .portfolio-items-cash{
     position: relative;
 }
+.portfolio-items-cash:hover{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.portfolio-items-cash:hover .overlay-portfolio {
+    transform: translateY(0%);
+}
+.overlay-portfolio p{
+    padding: 40px 32px 164px 32px;
+
+}
 /* #endregion portfolio */
 /* #region footer */
 footer {
-    display: block;
+    display: flex;
     background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -447,8 +462,14 @@ footer {
 footer p{
     color: #f4f4fd;
     width: 264px;
-    margin-top: 16px;
+    padding-top: 16px;
+    display: flex;
 
+
+
+}
+.footer-logo-desc{
+    flex-direction: column;
 }
 .social-media-title{
     font-weight: 500;
@@ -459,15 +480,9 @@ footer p{
     display: flex;
     column-gap: 16px;
 }
-footer{
-    position: relative;
-}
-.social-link-div{
-    position: absolute;
-    padding-left: 17px;
-    left: 47%;
+/* .social-link-div{
     transform: translate(-50%, -120%);
-}
+} */
 .social-link-icons{
     display: flex;
     background-color: #4D5AE5;
@@ -476,12 +491,20 @@ footer{
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    fill: #F4F4FD;
-    transition: 200ms ease-in-out;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    
+
+}
+.social-link-icons svg{
+    fill: #F4F4FD;
 }
 .social-link-icons:hover{
     background-color: #31d0aa;
+}
+.footer-desc{
+    display: flex;
+    column-gap: 120px;
 }
 
 /* #endregion footer */
