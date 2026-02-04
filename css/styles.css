@@ -60,6 +60,7 @@ p {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+    width: 100%;
 
 
 }
@@ -119,7 +120,10 @@ header{
 }
 .active-link{
     position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+#active-link{
+    color: #404bbf
 }
 .active-link::after {
     content: "";
@@ -131,9 +135,7 @@ header{
     position: absolute;
     bottom: -3px;
 
-}
-.active-link:active{
-    color: #4D5AE5
+
 }
 /* #endregion navigation */
 /* #region address */
@@ -299,7 +301,7 @@ address{
     font-size: 36px;
     line-height: 1.111111111111111;
     letter-spacing: 0.02em;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .team-item:hover{
    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -483,7 +485,7 @@ footer {
 footer p{
     color: #f4f4fd;
     width: 264px;
-    padding-top: 16px;
+    margin-top: 16px;
     display: flex;
 
 
